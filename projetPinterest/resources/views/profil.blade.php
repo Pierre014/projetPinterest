@@ -4,7 +4,7 @@
 
 @section('content')
 
-<!-- Section -->
+<!-- Section à modifier en fonction des pages etc -->
 <header>
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <a class="navbar-brand " href="#">P-Interest</a>
