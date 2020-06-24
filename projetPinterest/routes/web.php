@@ -13,7 +13,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'HomeController@index')->name('home');
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::get('profil', 'ProfilController@profile');
+Route::post('profil', 'ProfilController@update_avatar');
+
+Route::group(['middleware' => 'auth'],function(){
+    Route::get('/profil', function(){
+        return view("profil");
+    });
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
