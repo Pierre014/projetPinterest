@@ -36,9 +36,6 @@
                         <li class="nav-item active">
                             <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/profil">My Profil</a>
-                        </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -67,6 +64,9 @@
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
+                                     
+                                    <a class="dropdown-item" href="{{url('profil')}}">Profil</a>
+                        
 
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
