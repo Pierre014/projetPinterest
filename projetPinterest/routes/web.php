@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Route::get('profil', 'ProfilController@profile');
@@ -31,9 +31,11 @@ Auth::routes();
 Route::get('profil', 'ProfilController@profile');
 Route::post('profil', 'ProfilController@update_avatar');
 Route::group(['middleware' => 'auth'],function(){
-    Route::get('/profil', function(){
+    Route::get('profil', function(){
         return view("profil");
     });
 });
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+// Route::get('/profil', 'ProfilController@profilindex')->name('profil');

@@ -1,23 +1,31 @@
 @extends('layouts.app')
 
+@section('title', 'profil')
+
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Dashboard</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    <img src="{{asset(Auth::user()->avatar)}}" style="height: 35px; width:35px; margin-right: 15px">You are logged as {{Auth::user()->pseudo}}!
-                </div>
+<!-- Section à modifier en fonction des pages etc -->
+    <!-- Display d'image à automatiser  -->
+    <div class="container container-fluid mx-auto">
+        <div class="jumbotron bg-secondary">
+            <div class="firstline pt-3 pb-2 row row-responsive-sm">
+                <img src="https://i.pinimg.com/564x/72/70/d0/7270d0f262f68ebb6d1ea8804e750148.jpg" class="rounded w-25 col-sm-4 " alt="fleur">
+                <img src="https://i.pinimg.com/564x/72/70/d0/7270d0f262f68ebb6d1ea8804e750148.jpg" class="rounded w-25 col-sm-4" alt="fleur2">
+                <img src="https://i.pinimg.com/564x/72/70/d0/7270d0f262f68ebb6d1ea8804e750148.jpg" class="rounded w-25 col-sm-4" alt="fleur3">
+            </div>
+            <div class=" secondline row pt-4 row-responsive-sm">
+                <img src="https://i.pinimg.com/564x/72/70/d0/7270d0f262f68ebb6d1ea8804e750148.jpg" class="rounded w-25 col-sm-3" alt="fleur">
+                <img src="https://i.pinimg.com/564x/72/70/d0/7270d0f262f68ebb6d1ea8804e750148.jpg" class="rounded w-25 col-sm-3" alt="fleur2">
+                <img src="https://i.pinimg.com/564x/72/70/d0/7270d0f262f68ebb6d1ea8804e750148.jpg" class="rounded w-25 col-sm-3" alt="fleur3">
+                <img src="https://i.pinimg.com/564x/72/70/d0/7270d0f262f68ebb6d1ea8804e750148.jpg" class="rounded w-25 col-sm-3" alt="fleur4">
+            </div>
+            <div class=" thirdline row pt-4 row-responsive-sm">
+                <img src="https://i.pinimg.com/564x/72/70/d0/7270d0f262f68ebb6d1ea8804e750148.jpg" class="rounded w-25 col-sm-2" alt="fleur">
+                <img src="https://i.pinimg.com/564x/72/70/d0/7270d0f262f68ebb6d1ea8804e750148.jpg" class="rounded w-25 col-sm-2" alt="fleur2">
+                <img src="https://i.pinimg.com/564x/72/70/d0/7270d0f262f68ebb6d1ea8804e750148.jpg" class="rounded w-25 col-sm-2" alt="fleur3">
+                <img src="https://i.pinimg.com/564x/72/70/d0/7270d0f262f68ebb6d1ea8804e750148.jpg" class="rounded w-25 col-sm-2" alt="fleur4">
+                <img src="https://i.pinimg.com/564x/72/70/d0/7270d0f262f68ebb6d1ea8804e750148.jpg" class="rounded w-25 col-sm-2" alt="fleur5">
+                <img src="https://i.pinimg.com/564x/72/70/d0/7270d0f262f68ebb6d1ea8804e750148.jpg" class="rounded w-25 col-sm-2" alt="fleur6">
             </div>
         </div>
     </div>
-</div>
 @endsection
