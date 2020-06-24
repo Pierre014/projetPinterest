@@ -71,7 +71,9 @@ class RegisterController extends Controller
             $avatarpath = public_path('/image/');
             $avataruploaded->move($avatarpath, $avatarname);
             return User::create([
-                'name' => $data['name'],
+                'lastname' => $data['lastname'],
+                'firstname' => $data['firstname'],
+                'pseudo' => $data['pseudo'],
                 'email' => $data['email'],
                 'password' => Hash::make($data['password']),
                 'avatar' => '/image', $avatarname,
@@ -79,7 +81,9 @@ class RegisterController extends Controller
         }
 
         return User::create([
-            'name' => $data['name'],
+            'lastname' => $data['lastname'],
+            'firstname' => $data['firstname'],
+            'pseudo' => $data['pseudo'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);

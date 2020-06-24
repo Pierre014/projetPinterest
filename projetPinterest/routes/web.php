@@ -28,4 +28,12 @@ Route::group(['middleware' => 'auth'],function(){
 
 Auth::routes();
 
+Route::get('profil', 'ProfilController@profile');
+Route::post('profil', 'ProfilController@update_avatar');
+Route::group(['middleware' => 'auth'],function(){
+    Route::get('/profil', function(){
+        return view("profil");
+    });
+});
+
 Route::get('/home', 'HomeController@index')->name('home');
