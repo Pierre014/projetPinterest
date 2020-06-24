@@ -16,4 +16,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'HomeController@index')->name('home');
 Auth::routes();
 
+Route::get('profil', 'ProfilController@profile');
+Route::post('profil', 'ProfilController@update_avatar');
+Route::group(['middleware' => 'auth'],function(){
+    Route::get('/profil', function(){
+        return view("profil");
+    });
+});
+
 Route::get('/home', 'HomeController@index')->name('home');
