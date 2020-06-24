@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <img src="{{asset(Auth::user()->avatar)}}" class="container" style="width: 200px; height:200px; border-radius: 900px">
-            <h2>{{ Auth::user()->name }}'s profil</h2>
+            <h2>{{ Auth::user()->pseudo }}'s profil</h2>
             <form enctype="multipart/form-data" action="/profil" method="POST">
                 <label>Update your profil picture</label>
                 <input type="file" name="avatar">
