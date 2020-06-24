@@ -26,7 +26,7 @@
                         <li class="list-group-item">Lastname - {{ Auth::user()->lastname }}</li>
                         <li class="list-group-item">Pseudo - {{ Auth::user()->pseudo }}</li>
                         <li class="list-group-item">Email - {{ Auth::user()->email }}</li>
-                        <li class="list-group-item">Pass - Reset your password on<input type="submit" value="Reset " class="btn btn-sm btn-danger ml-4"> </li>
+                        <li class="list-group-item">Pass - Reset your password on <input type="submit" value="Reset " class="btn btn-sm btn-danger ml-4"> </li>
                       </ul>
                 </div>
             </div>
