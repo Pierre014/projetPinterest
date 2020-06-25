@@ -7,6 +7,11 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+
 #cover{
     background-image: url('https://www.laboiteverte.fr/wp-content/uploads/2012/11/europe-couverture-street-view.png');
 }
+
+ // SCSS
+@import 'home';
+
