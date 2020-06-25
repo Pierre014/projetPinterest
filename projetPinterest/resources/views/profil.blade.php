@@ -62,7 +62,7 @@
 </div> --}} 
 <div class="container"> <!-- container fluid?-->
     <div class="row my-2 ">
-        <div class="col-lg-8 order-lg-2 ">
+        <div class="col-lg-8 order-lg-1 ">
             <ul class="nav nav-tabs ">
                 <li class="nav-item">
                     <a href="" data-target="#profile" data-toggle="tab" class="nav-link active">Profile</a>
@@ -91,7 +91,7 @@
                                 <li>Email ▪ {{ Auth::user()->email }}</li>
                             </ul>
                             <h4 class="font-weight-bold ">Password</h4>
-                            <p> Click here to reset your password - <input type="submit" value="Reset " class="btn btn-sm btn-dark ml-1"></p>
+                            <p> Click here to reset your password - <input type="submit" value="Reset " class="btn font-weight-bold btn-sm btn-dark ml-1"></p>
                         </div>
                         <div class="col-md-6">
                             <h4 class="font-weight-bold">Statistics</h4>
@@ -105,7 +105,7 @@
                     </div>
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4 class="font-weight-bold mt-5">Recently shared</h4>
+                            <h4 class="font-weight-bold mt-5">Pinned</h4>
                             <img src="{{asset(Auth::user()->avatar)}}" style="min-width: 8rem; height:9.8rem" class="m-2 rounded" alt="posts">
                             <img src="{{asset(Auth::user()->avatar)}}" style="min-width: 8rem; height:9.8rem" class="m-2 rounded" alt="posts">
                             <img src="{{asset(Auth::user()->avatar)}}" style="min-width: 8rem; height:9.8rem" class="m-2 rounded" alt="posts">
@@ -119,7 +119,7 @@
                         <tbody>                                    
                             <tr class="border border-secondary">
                                 <td class="border border-secondary">
-                                   <span class="float-right font-weight-bold ">3 hrs ago</span>Posts shared <a href="{{asset(Auth::user()->avatar)}}"> lien posts partagés</a>
+                                   <span class="float-right font-weight-bold ">3 hrs ago <input type="submit" value="Pin'" class="btn btn-sm font-weight-bold btn-info border border-dark ml-1"> </span>Posts shared <a href="{{asset(Auth::user()->avatar)}}"> lien posts partagés</a>
                                 </td>
                             </tr>
                             <tr class="border border-secondary rounded">
@@ -129,7 +129,7 @@
                             </tr>
                             <tr class="border border-secondary">
                                 <td class="border border-secondary">
-                                    <span class="float-right font-weight-bold">6 hrs ago</span>Posts shared <a href="{{asset(Auth::user()->avatar)}}"> lien posts partagés</a>
+                                    <span class="float-right font-weight-bold">6 hrs ago <input type="submit" value="Pin'" class="btn btn-sm font-weight-bold btn-info border border-dark ml-1"> </span>Posts shared <a href="{{asset(Auth::user()->avatar)}}"> lien posts partagés</a>
                                 </td>
                             </tr>
                             <tr class="border border-secondary">
@@ -139,7 +139,7 @@
                             </tr>
                             <tr class="border border-secondary">
                                 <td class="border border-secondary">
-                                    <span class="float-right font-weight-bold">3 hrs ago</span>Posts shared <a href="{{asset(Auth::user()->avatar)}}"> lien posts partagés</a>
+                                    <span class="float-right font-weight-bold">3 hrs ago <input type="submit" value="Pin'" class="btn btn-sm font-weight-bold btn-info border border-dark ml-1"> </span>Posts shared <a href="{{asset(Auth::user()->avatar)}}"> lien posts partagés</a>
                                 </td>
                             </tr>
                             <tr class="border border-secondary">
@@ -149,7 +149,7 @@
                             </tr>
                             <tr class="border border-secondary">
                                 <td class="border border-secondary">
-                                    <span class="float-right font-weight-bold">3 hrs ago</span>Posts shared <a href="{{asset(Auth::user()->avatar)}}"> lien posts partagés</a>
+                                    <span class="float-right font-weight-bold">3 hrs ago <input type="submit" value="Pin'" class="btn btn-sm font-weight-bold btn-info border border-dark ml-1"></span>Posts shared <a href="{{asset(Auth::user()->avatar)}}"> lien posts partagés</a>
                                 </td>
                             </tr>
                             <tr class="border border-secondary">
@@ -159,7 +159,7 @@
                             </tr>
                             <tr class="border border-secondary">
                                 <td class="border border-secondary">
-                                    <span class="float-right font-weight-bold">3 hrs ago</span>Posts shared <a href="{{asset(Auth::user()->avatar)}}"> lien posts partagés</a> 
+                                    <span class="float-right font-weight-bold">3 hrs ago <input type="submit" value="Pin'" class="btn btn-sm font-weight-bold btn-info border border-dark ml-1"></span>Posts shared<a href="{{asset(Auth::user()->avatar)}}"> lien posts partagés</a> 
                                 </td>
                             </tr>
                             <tr class="border border-secondary">
@@ -169,7 +169,7 @@
                             </tr>
                             <tr class="border border-secondary">
                                 <td class="border border-secondary">
-                                    <span class="float-right font-weight-bold">3 hrs ago</span>Posts shared <a href="{{asset(Auth::user()->avatar)}}"> lien posts partagés</a>
+                                    <span class="float-right font-weight-bold">3 hrs ago <input type="submit" value="Pin'" class="btn btn-sm font-weight-bold btn-info border border-dark ml-1"> </span>Posts shared <a href="{{asset(Auth::user()->avatar)}}"> lien posts partagés</a>
                                 </td>
                             </tr>
                             <tr class="border border-secondary">
@@ -179,7 +179,7 @@
                             </tr>
                             <tr class="border border-secondary">
                                 <td class="border border-secondary">
-                                    <span class="float-right font-weight-bold">3 hrs ago</span>Posts shared <a href="{{asset(Auth::user()->avatar)}}"> lien posts partagés</a>
+                                    <span class="float-right font-weight-bold">3 hrs ago <input type="submit" value="Pin'" class="btn btn-sm font-weight-bold btn-info border border-dark ml-1"> </span>Posts shared <a href="{{asset(Auth::user()->avatar)}}"> lien posts partagés</a>
                                 </td>
                             </tr>
                             <tr class="border border-secondary">
@@ -189,7 +189,7 @@
                             </tr>
                             <tr class="border border-secondary">
                                 <td class="border border-secondary">
-                                    <span class="float-right font-weight-bold">3 hrs ago</span>Posts shared <a href="{{asset(Auth::user()->avatar)}}"> lien posts partagés</a>
+                                    <span class="float-right font-weight-bold">3 hrs ago <input type="submit" value="Pin'" class="btn btn-sm font-weight-bold btn-info border border-dark ml-1"> </span>Posts shared <a href="{{asset(Auth::user()->avatar)}}"> lien posts partagés</a>
                                 </td>
                             </tr>
                             <tr class="border border-secondary">
@@ -231,11 +231,11 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-4 order-lg-1 text-center rounded border border-dark" id="cover">
-            <h3 class="mb-3 mt-3 font-weight-bold">▪ {{ Auth::user()->pseudo }}'s profile ▪</h3>
+        <div class="col-lg-4 order-lg-2 text-center rounded border border-dark" id="cover">
+            <h3 class="mb-3 mt-3 font-weight-bold">▪ {{ Auth::user()->pseudo }}'s profile ▪ <input type="submit" value="FOLLOW" class="btn btn-sm font-weight-bold btn-danger border border-dark ml-1"></h3>
             <img src="{{asset(Auth::user()->avatar)}}" alt="avatar" class="mx-auto img-fluid d-block border border-dark rounded mt-3 mb-1">
             <label class="custom-file">
-                <span class="custom-file-control border border-dark badge badge-pill badge-secondary">Choose different file</span>
+                <h3 class="custom-file-control border border-dark badge badge-pill badge-secondary">Choose different file</h3>
                 <input type="file" id="file" class="custom-file-input">
             </label>
         </div>
@@ -243,3 +243,4 @@
 </div>
 
 @endsection
+

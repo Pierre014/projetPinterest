@@ -11,13 +11,13 @@
       <div class="col-md-4 my-auto text-right">
         <h3 class="my-3 font-weight-bold">Description</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ea numquam fugiat sit iusto. Obcaecati mollitia, accusamus eligendi totam illo voluptates facere id error eius deserunt, modi enim, voluptatibus tempora.</p>
-        <h3 class="my-3">Author</h3>
+        <h3 class="my-3 font-weight-bold">Author</h3>
         <ul class="list-unstyled">
           <li><a href="#">need author replace pseudo J-J Goldman</a></li>
         </ul>
-        <h3 class="my-3">Wanna Pint'?</h3>
+        <h3 class="my-3 font-weight-bold">Wanna Pin' or Like?</h3>
         <ul class="list-unstyled">
-          <li><a href="#"><button type="submit" class="btn  text-white btn-info">Shares this</button></a></li>
+          <li><a href="#"><button type="submit" class="btn  text-white btn-info mr-2">Pinned this</button><button type="submit" class="btn  text-white btn-primary">Like it</button></a></li>
           
         </ul>
       </div>
