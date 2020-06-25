@@ -232,7 +232,7 @@
             </div>
         </div>
         <div class="col-lg-4 order-lg-1 text-center rounded border border-dark" id="cover">
-            <h3 class="mb-3 mt-3 font-weight-bold">{{ Auth::user()->pseudo }}'s profile</h3>
+            <h3 class="mb-3 mt-3 font-weight-bold">▪ {{ Auth::user()->pseudo }}'s profile ▪</h3>
             <img src="{{asset(Auth::user()->avatar)}}" alt="avatar" class="mx-auto img-fluid d-block border border-dark rounded mt-3 mb-1">
             <label class="custom-file">
                 <span class="custom-file-control border border-dark badge badge-pill badge-secondary">Choose different file</span>
