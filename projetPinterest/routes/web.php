@@ -39,3 +39,6 @@ Route::group(['middleware' => 'auth'],function(){
 Route::get('/home', 'HomeController@index')->name('home');
 
 // Route::get('/profil', 'ProfilController@profilindex')->name('profil');
+
+
+Route::get('/details', 'DetailsController@Details')->name('détails');
