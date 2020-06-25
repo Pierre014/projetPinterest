@@ -63,7 +63,7 @@
 <div class="container"> <!-- container fluid?-->
     <div class="row my-2 ">
         <div class="col-lg-8 order-lg-2 ">
-            <ul class="nav nav-tabs">
+            <ul class="nav nav-tabs ">
                 <li class="nav-item">
                     <a href="" data-target="#profile" data-toggle="tab" class="nav-link active">Profile</a>
                 </li>
@@ -74,7 +74,7 @@
                     <a href="" data-target="#edit" data-toggle="tab" class="nav-link">Edit</a>
                 </li>
             </ul>
-            <div class="tab-content py-4 rounded">
+            <div class="tab-content py-4 rounded bg-light pl-4">
                 <div class="tab-pane active " id="profile">
                     <div class="row mt-5 ">
                         <div class="col-md-6 ">
@@ -90,7 +90,7 @@
                                 <li>Pseudo ▪ {{ Auth::user()->pseudo }}</li>
                                 <li>Email ▪ {{ Auth::user()->email }}</li>
                             </ul>
-                            <h4 class="font-weight-bold">Password</h4>
+                            <h4 class="font-weight-bold ">Password</h4>
                             <p> Click here to reset your password - <input type="submit" value="Reset " class="btn btn-sm btn-dark ml-1"></p>
                         </div>
                         <div class="col-md-6">
@@ -106,17 +106,16 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <h4 class="font-weight-bold mt-5">Recently shared</h4>
-                            <img src="{{asset(Auth::user()->avatar)}}" style="width: 9rem; height:9rem" class="m-2" alt="posts">
-                            <img src="{{asset(Auth::user()->avatar)}}" style="width: 9rem; height:9rem" class="m-2" alt="posts">
-                            <img src="{{asset(Auth::user()->avatar)}}" style="width: 9rem; height:9rem" class="m-2" alt="posts">
-                            <img src="{{asset(Auth::user()->avatar)}}" style="width: 9rem; height:9rem" class="m-2" alt="posts">
-                            
+                            <img src="{{asset(Auth::user()->avatar)}}" style="min-width: 8rem; height:9.8rem" class="m-2 rounded" alt="posts">
+                            <img src="{{asset(Auth::user()->avatar)}}" style="min-width: 8rem; height:9.8rem" class="m-2 rounded" alt="posts">
+                            <img src="{{asset(Auth::user()->avatar)}}" style="min-width: 8rem; height:9.8rem" class="m-2 rounded" alt="posts">
+                            <img src="{{asset(Auth::user()->avatar)}}" style="min-width: 8rem; height:9.8rem" class="m-2 rounded" alt="posts"> 
                             <hr>
                         </div>
                     </div>
                 </div>
                 <div class="container-fluid tab-pane p-2 " id="messages">
-                    <table class="table table-hover table-striped  ">
+                    <table class="table table-hover table-striped">
                         <tbody>                                    
                             <tr class="border border-secondary">
                                 <td class="border border-secondary">
@@ -232,8 +231,8 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-4 order-lg-1 text-center">
-            <h3 class="mb-3 mt-2 font-weight-bold">{{ Auth::user()->pseudo }}'s profile</h3>
+        <div class="col-lg-4 order-lg-1 text-center rounded border border-dark" id="cover">
+            <h3 class="mb-3 mt-3 font-weight-bold">{{ Auth::user()->pseudo }}'s profile</h3>
             <img src="{{asset(Auth::user()->avatar)}}" alt="avatar" class="mx-auto img-fluid d-block border border-dark rounded mt-3 mb-1">
             <label class="custom-file">
                 <span class="custom-file-control border border-dark badge badge-pill badge-secondary">Choose different file</span>
