@@ -14,14 +14,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('goodhome');
 });
 
 Route::get('profil', 'ProfilController@profile');
 Route::post('profil', 'ProfilController@update_avatar');
 
-Route::group(['middleware' => 'auth'],function(){
-    Route::get('/profil', function(){
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('/profil', function () {
         return view("profil");
     });
 });
@@ -30,8 +30,8 @@ Auth::routes();
 
 Route::get('profil', 'ProfilController@profile');
 Route::post('profil', 'ProfilController@update_avatar');
-Route::group(['middleware' => 'auth'],function(){
-    Route::get('profil', function(){
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('profil', function () {
         return view("profil");
     });
 });
