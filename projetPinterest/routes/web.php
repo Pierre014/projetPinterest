@@ -42,3 +42,17 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 Route::get('/details', 'DetailsController@Details')->name('détails');
+
+
+Route::get('/post', function(){
+
+    $post = new App\Article();
+    $post->image = "coucou.jpg";
+    $post->title = 'coucou';
+    $post->description = "maboy";
+    $post->author = "maboyboy";
+    $post->user_id = $user->id;
+
+    $post->save();
+
+});
