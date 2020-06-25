@@ -42,3 +42,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 Route::get('/details', 'DetailsController@Details')->name('détails');
+
+Route::get('/share', 'ShareController@Share')->name('share');
