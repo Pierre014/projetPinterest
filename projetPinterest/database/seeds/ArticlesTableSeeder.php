@@ -16,7 +16,7 @@ class ArticlesTableSeeder extends Seeder
     {
         $faker = Faker::create('App\Article');
 
-        for($i=1; $i<=20; $i++){
+        for($i=1; $i<=5; $i++){
             $id = (Auth::id())+1;
             DB::table('articles')->insert([
                 'title'=>$faker->sentence,
