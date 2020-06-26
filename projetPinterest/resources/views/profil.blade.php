@@ -1,6 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
+
+<?php
+  $background = array('https://storage.needpix.com/rsynced_images/box-1472804_1280.png', 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Ubuntu_alternative_background.svg/1600px-Ubuntu_alternative_background.svg.png' ); // array of filenames
+
+  $random = rand(0, count($background)-1); 
+  $selectedBg = "$background[$random]"; 
+?>
+
 {{-- <div class="container-fluid">
     <div class="row justify-content-center">
         <div class="col-md-8 ">
