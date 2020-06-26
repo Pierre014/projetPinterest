@@ -66,6 +66,7 @@
                                     </a>
                                      
                                     <a class="dropdown-item" href="{{url('profil')}}">Profil</a>
+                                    <a class="dropdown-item" href=" {{url('share')}} ">Pintoad</a>
                         
 
 

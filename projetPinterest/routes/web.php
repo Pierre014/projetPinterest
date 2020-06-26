@@ -13,15 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
-
+Route::get('/', 'HomeController@index');
 Route::get('profil', 'ProfilController@profile');
 Route::post('profil', 'ProfilController@update_avatar');
 
-Route::group(['middleware' => 'auth'],function(){
-    Route::get('/profil', function(){
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('/profil', function () {
         return view("profil");
     });
 });
@@ -30,8 +27,8 @@ Auth::routes();
 
 Route::get('profil', 'ProfilController@profile');
 Route::post('profil', 'ProfilController@update_avatar');
-Route::group(['middleware' => 'auth'],function(){
-    Route::get('profil', function(){
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('profil', function () {
         return view("profil");
     });
 });
@@ -41,6 +38,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 // Route::get('/profil', 'ProfilController@profilindex')->name('profil');
 
 
-Route::get('/details', 'DetailsController@Details')->name('détails');
-
 Route::get('/share', 'ShareController@Share')->name('share');
+
+Route::get('/details/{id}', 'DetailsController@Details')->name('détails');
