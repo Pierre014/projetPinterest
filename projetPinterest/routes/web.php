@@ -38,6 +38,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 // Route::get('/profil', 'ProfilController@profilindex')->name('profil');
 
 
-Route::get('/share', 'ShareController@Share')->name('share');
+Route::get('/share', 'ShareController@index')->name('index');
+Route::post('/share', 'ShareController@store');
 
 Route::get('/details/{id}', 'DetailsController@Details')->name('détails');
