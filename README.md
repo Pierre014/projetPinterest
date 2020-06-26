@@ -36,5 +36,4 @@ Mise en pratique des connaissances sur Laravel/PHP dans la création d'un site a
 ## Contraintes
   
   * Responsive
-  * 
   
