@@ -1,9 +1,9 @@
 # projetPinterest
 
 
-## but
+## But
 
-Mise en pratique des connaissances sur laravel/PHP dans la création d'un site article type "pinterest".
+Mise en pratique des connaissances sur Laravel/PHP dans la création d'un site article type "pinterest".
 
 ## Equipe
 
@@ -14,10 +14,27 @@ Mise en pratique des connaissances sur laravel/PHP dans la création d'un site a
   
 ## Répartition
 
-  - une équipe back
-  - une équipe front
+  ### Une équipe back composées de :
+
+  * Lloyd Colart
+  * Pierre Lorand
+
+
+   ### Une équipe front composée de :
+
+   * Léna Benoit
+   * Amaury Deltenre
   
-## contrainte
+
+  ## Technologies utilisées :
+
+  * Bootstrap
+  * Laravel
+  * PHP
+  * Masonry
+
+## Contraintes
   
-  * responsive
+  * Responsive
+  * 
   
