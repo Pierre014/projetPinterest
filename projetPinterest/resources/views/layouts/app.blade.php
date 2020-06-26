@@ -66,6 +66,7 @@
                                     </a>
                                      
                                     <a class="dropdown-item" href="{{url('profil')}}">Profil</a>
+                                    <a class="dropdown-item" href=" {{url('share')}} ">Pintoad</a>
                         
 
 
@@ -80,7 +81,7 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        <main class="py-3">
             @yield('content')
         </main>
     </div>
