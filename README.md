@@ -1,39 +1,32 @@
 # projetPinterest
 
 
-## But
+## But:
 
-Mise en pratique des connaissances sur Laravel/PHP dans la création d'un site article type "pinterest".
+Mise en pratique des connaissances sur Laravel/PHP/Bootstrap dans la création d'un site article type "pinterest".
 
-## Equipe
-
-  - Benoit Léna
-  - Colart Lloyd
-  - Deltenre Amaury
-  - Lorand Pierre
+## Equipe:
+  - Lorand Pierre(back) : https://github.com/Pierre014
+  - Colart Lloyd (back) : https://github.com/Lloydcol
+  - Benoit Léna (front) : https://github.com/Lena4496
+  - Deltenre Amaury(front) : https://github.com/AmauD
   
-## Répartition
-
-  ### Une équipe back composées de :
-
-  * Lloyd Colart
-  * Pierre Lorand
-
-
-   ### Une équipe front composée de :
-
-   * Léna Benoit
-   * Amaury Deltenre
   
+## Où et quand:
 
-  ## Technologies utilisées :
+  * Charleroi Becode
+  * Du 22/06/20 au 26/06/20
 
+
+## Technologies utilisées :
+  * Scss 
   * Bootstrap
-  * Laravel
-  * PHP
+  * PHP/Laravel
   * Masonry
 
-## Contraintes
+## Contraintes:
   
   * Responsive
+  * En tuile
+  * Une page accueil, une page détail, une page login/register, une page profil, une page partage.
   
