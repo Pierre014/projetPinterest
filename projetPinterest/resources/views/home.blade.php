@@ -13,7 +13,9 @@
         @foreach ($articles as $article)
             <div class="masonry-item">
                 {{-- <?php dd($article->image)?> --}}
-                <img src={{$article->image}} alt="Dummy Image" class="masonry-content">
+                <a href="/details/{{$article->id}}">
+                    <img src={{$article->image}} alt="Dummy Image" class="masonry-content">
+                </a>
             </div>
         @endforeach
     </div>    

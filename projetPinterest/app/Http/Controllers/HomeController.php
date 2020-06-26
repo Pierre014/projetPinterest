@@ -25,7 +25,6 @@ class HomeController extends Controller
     public function index(Article $articles)
     {
         $articles = DB::table('articles')->get();
-        dd($articles);
         return view('home', compact('articles'));
     }
 }
