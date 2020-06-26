@@ -16,11 +16,12 @@ class ArticlesTableSeeder extends Seeder
     {
         $faker = Faker::create('App\Article');
 
-        for($i=1; $i<=5; $i++){
+        for($i=1; $i<=4; $i++){
+            $flex = random_int(100, 999);
             $id = (Auth::id())+1;
             DB::table('articles')->insert([
                 'title'=>$faker->sentence,
-                'image'=>$faker->imageUrl($width = 640, $height = 480),
+                'image'=>$faker->imageUrl($width = 640, $height = $flex),
                 'author'=>$faker->name,
                 'content'=> $faker->paragraph(5),
                 'updated_at'=>\Carbon\Carbon::now(),
@@ -28,6 +29,6 @@ class ArticlesTableSeeder extends Seeder
                 'user_id'=> $id,
             ]);
         }
-        
+
     }
 }
